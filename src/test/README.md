@@ -6,3 +6,7 @@ go mod init (モジュール名)
 # サンプル
 go mod init myapp
 ```
+## コンパイル
+```bash
+go build
+```
