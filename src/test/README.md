@@ -10,3 +10,10 @@ go mod init myapp
 ```bash
 go build
 ```
+## 実行
+```bash
+# コンパイル済みの場合
+./(コンパイル済みファイル名)
+# 未コンパイルの場合
+go run (goファイル名)
+```
