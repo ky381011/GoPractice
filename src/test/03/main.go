@@ -2,16 +2,16 @@ package main
 
 import "fmt"
 
-type baseStruct struct {
+type BaseStruct struct {
 	Name    string
 	ID      int
 	Country string
 }
 
-type SampleMap map[string]baseStruct
+type SampleMap map[string]*BaseStruct
 
-func NewSampleMap() *SampleMap {
-	return &SampleMap{
+func NewSampleMap() SampleMap {
+	return SampleMap{
 		"first": {
 			Name:    "John Doe",
 			ID:      1,
