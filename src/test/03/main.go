@@ -26,5 +26,8 @@ func NewSampleMap() SampleMap {
 }
 
 func main() {
-	fmt.Println(NewSampleMap())
+	m := NewSampleMap()
+	for k, v := range m {
+		fmt.Printf("%s: %+v\n", k, *v)
+	}
 }
